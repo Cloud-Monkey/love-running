@@ -45,10 +45,22 @@ h1 {
 
 /* top link menu */
 #menu {
-    font-size: larger;
+    font-size: 110%;
     letter-spacing: 4px;
     list-style-type: none;
 }
+
+/* list items in menu */
+#menu li {
+    margin-bottom: 1em;
+}
+
+/* shows active page */
+.active {
+    border-bottom: 1px solid #3a3a3a;
+}
+
+
 
 /* main */
 main {
