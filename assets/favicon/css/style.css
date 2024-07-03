@@ -43,6 +43,13 @@ h1 {
     color: #252525;
 }
 
+/* top link menu */
+#menu {
+    font-size: larger;
+    letter-spacing: 4px;
+    list-style-type: none;
+}
+
 /* main */
 main {
     background-color: lightblue;
