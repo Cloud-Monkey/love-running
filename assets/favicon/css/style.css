@@ -208,6 +208,8 @@ main {
     background-position: 75%;
     padding: 20px 10% 0 10%;
     flex-grow: 1;
+    background-position: center;
+    position: relative;
 }
 
 
@@ -215,8 +217,12 @@ main {
     color: #ffffff;
     background-color: rgba(60, 60, 60, 0.6);
     padding: 30px;
+    max-width: 400px;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
-
 
 #signup-form>h2 {
     color: #fafafa;
@@ -265,6 +271,13 @@ main {
     font-size: 160%;
     padding: 5%;
     color: #3a3a3a;
+}
+
+/* Media query: large or landscape phones (440px and below) */
+@media screen and (max-width: 440px) {
+    #signup-form {
+        max-width: calc(100vw - 70px);
+    }
 }
 
 /* Media query: large or landscape phones (576px and up) */
@@ -339,19 +352,6 @@ main {
         column-count: 3;
     }
 
-    /* Form */
-    #signup {
-        background-position: center;
-        position: relative;
-    }
-
-    #signup-form {
-        max-width: 400px;
-        position: absolute;
-        left: 10%;
-        top: 150px;
-    }
-
     .text-input:hover {
         border-color: #f16c6b;
     }
@@ -374,6 +374,7 @@ main {
     }
 }
 
+/* Large devices (laptops and desktops, 1200px and up) */
 @media screen and (min-width: 1200px) {    
     /* Reasons section */
     #benefits {
